@@ -4221,11 +4221,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\workspace\\ehb\\csharp\\desktop\\GitRecon\\GitRecon.csproj",
+      "projectUniqueName": "D:\\projects\\OsintEye\\GitRecon.csproj",
       "projectName": "GitRecon",
-      "projectPath": "D:\\workspace\\ehb\\csharp\\desktop\\GitRecon\\GitRecon.csproj",
+      "projectPath": "D:\\projects\\OsintEye\\GitRecon.csproj",
       "packagesPath": "C:\\Users\\r00t\\.nuget\\packages\\",
-      "outputPath": "D:\\workspace\\ehb\\csharp\\desktop\\GitRecon\\obj\\",
+      "outputPath": "D:\\projects\\OsintEye\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\r00t\\AppData\\Roaming\\NuGet\\NuGet.Config",

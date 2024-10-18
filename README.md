@@ -4,6 +4,8 @@
 ### Overview
 OSINT Eye is a desktop application built using WPF (Windows Presentation Foundation) in C#. The application provides functionality for querying GitHub repositories, finding user emails, social media account lookups, and subdomain enumeration. It interacts with GitHub’s API and utilizes a database to store email and author information for faster subsequent queries. The application also provides export capabilities for results to CSV files.
 
+![Application Screenshot](/app.png)
+
 ### Key Features:
 - Query GitHub for usernames by email.
 - Retrieve emails associated with a GitHub username and store them in a database.

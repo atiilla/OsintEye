@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6wUqc91ouz4=",
+  "dgSpecHash": "aZxn1LATVds=",
   "success": true,
-  "projectFilePath": "D:\\workspace\\ehb\\csharp\\desktop\\GitRecon\\GitRecon.csproj",
+  "projectFilePath": "D:\\projects\\OsintEye\\GitRecon.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\r00t\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\r00t\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

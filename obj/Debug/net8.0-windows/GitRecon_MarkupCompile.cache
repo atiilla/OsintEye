@@ -4,12 +4,12 @@
 winexe
 C#
 .cs
-D:\workspace\ehb\csharp\desktop\GitRecon\obj\Debug\net8.0-windows\
+D:\projects\OsintEye\obj\Debug\net8.0-windows\
 GitRecon
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\workspace\ehb\csharp\desktop\GitRecon\App.xaml
+D:\projects\OsintEye\App.xaml
 31917910739
 1-617038622
 192091696209
