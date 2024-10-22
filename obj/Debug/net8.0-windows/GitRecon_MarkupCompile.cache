@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\projects\OsintEye\App.xaml
-31917910739
+41853335544
 1-617038622
-192091696209
+20-1404504114
 239-556089693
-MainWindow.xaml;PopupWindow.xaml;Resources\Styles.xaml;
+MainWindow.xaml;PopupWindow.xaml;Resources\Dark.xaml;Resources\Styles.xaml;
 
 False
 

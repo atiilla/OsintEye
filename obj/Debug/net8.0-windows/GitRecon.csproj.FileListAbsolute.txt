@@ -282,3 +282,5 @@ D:\projects\OsintEye\obj\Debug\net8.0-windows\refint\GitRecon.dll
 D:\projects\OsintEye\obj\Debug\net8.0-windows\GitRecon.pdb
 D:\projects\OsintEye\obj\Debug\net8.0-windows\GitRecon.genruntimeconfig.cache
 D:\projects\OsintEye\obj\Debug\net8.0-windows\ref\GitRecon.dll
+D:\projects\OsintEye\obj\Debug\net8.0-windows\Resources\Dark.baml
+D:\projects\OsintEye\obj\Debug\net8.0-windows\App.baml

@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:GitRecon"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="Resources/Dark.xaml"/>
     </Application.Resources>
 </Application>

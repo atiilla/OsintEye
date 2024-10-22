@@ -13,6 +13,9 @@
     <Page Update="PopupWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Resources\Dark.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Resources\Styles.xaml">
       <SubType>Designer</SubType>
     </Page>

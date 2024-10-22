@@ -19,6 +19,7 @@ namespace GitRecon
 
 
 
+
         private const string API_URL = "https://api.github.com";
         private static readonly Dictionary<string, string> HEADER = new Dictionary<string, string>
 
@@ -31,6 +32,16 @@ namespace GitRecon
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void LightThemeClick(object sender, RoutedEventArgs e)
+        {
+            AppTheme.ChangeTheme(new Uri("Resources/Styles.xaml", UriKind.Relative));
+        }
+
+        private void DarkThemeClick(object sender, RoutedEventArgs e)
+        {
+            AppTheme.ChangeTheme(new Uri("Resources/Dark.xaml", UriKind.Relative));
         }
 
         // Event handler for querying by email

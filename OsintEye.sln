@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GitRecon", "GitRecon.csproj", "{1825AA4A-F25A-456B-85C9-62860C7D498D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "OSINTEye", "release\OSINTEye\OSINTEye.vdproj", "{77C374A4-B36D-4002-BF6E-FAD94551449A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1825AA4A-F25A-456B-85C9-62860C7D498D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1825AA4A-F25A-456B-85C9-62860C7D498D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1825AA4A-F25A-456B-85C9-62860C7D498D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1825AA4A-F25A-456B-85C9-62860C7D498D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77C374A4-B36D-4002-BF6E-FAD94551449A}.Debug|Any CPU.ActiveCfg = Debug
+		{77C374A4-B36D-4002-BF6E-FAD94551449A}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE0F2D0A-2E86-4175-A9B9-E7235C25E812}
+	EndGlobalSection
+EndGlobal
