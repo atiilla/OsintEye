@@ -175,3 +175,6 @@ private void DisplayMessage(TextBlock statusTextBlock, string message)
 ## Conclusion
 
 OSINT Eye is a powerful desktop tool for GitHub information retrieval, social media account searching, and subdomain enumeration. It provides a user-friendly interface and efficiently handles data with caching, rate-limiting, and error-handling mechanisms. Users can easily export their results for further use.
+
+## Disclaimer 
+OSINT Eye is intended for legal and ethical use only. The tool is designed to facilitate open-source intelligence (OSINT) gathering by leveraging publicly available data. Users are responsible for ensuring that their actions comply with applicable laws, regulations, and terms of service of the platforms being queried, including but not limited to GitHub's API policies. The developers of OSINT Eye assume no responsibility for any misuse of this tool or any damages resulting from its use. Always obtain proper authorization before querying or interacting with third-party services.
