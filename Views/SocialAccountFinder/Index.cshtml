@@ -2,10 +2,17 @@
     ViewData["Title"] = "Search";
 }
 
-<h2>Search</h2>
+<div class="container mt-5">
+    <h2 class="text-center">Search Social Accounts</h2>
 
-<form asp-controller="SocialAccountFinder" asp-action="CheckWebsites" method="post">
-    <label for="username">Enter Username:</label>
-    <input type="text" id="username" name="username" />
-    <button type="submit">Search</button>
-</form>
+    <form asp-controller="SocialAccountFinder" asp-action="CheckWebsites" method="post" class="mt-4">
+        <div class="form-group">
+            <label for="username" class="form-label">Enter Username:</label>
+            <input type="text" id="username" name="username" class="form-control" placeholder="Type username here" required />
+        </div>
+
+        <div class="d-flex justify-content-center mt-3">
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+</div>

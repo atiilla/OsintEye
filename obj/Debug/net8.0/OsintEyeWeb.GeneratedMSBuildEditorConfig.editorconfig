@@ -52,6 +52,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU29jaWFsQWNjb3VudEZpbmRlclxSZXN1bHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/projects/OsintEyeWeb/Views/SubdomainFinder/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViZG9tYWluRmluZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/OsintEyeWeb/Views/SubdomainFinder/Results.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3ViZG9tYWluRmluZGVyXFJlc3VsdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/projects/OsintEyeWeb/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

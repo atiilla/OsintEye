@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Search";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center">Subdomain Finder</h2>
+
+    <form asp-controller="SubdomainFinder" asp-action="FindSubdomains" method="post" class="mt-4">
+        <div class="form-group">
+            <label for="domain" class="form-label">Enter Domain:</label>
+            <input type="text" id="domain" name="domain" class="form-control" placeholder="e.g., example.com" required />
+        </div>
+
+        <div class="d-flex justify-content-center mt-3">
+            <button type="submit" class="btn btn-primary">Find Subdomains</button>
+        </div>
+    </form>
+</div>

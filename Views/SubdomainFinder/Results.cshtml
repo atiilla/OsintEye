@@ -4,24 +4,22 @@
 }
 
 <div class="container mt-5">
-    <h2 class="text-center">Search Results</h2>
+    <h2 class="text-center">Subdomain Results</h2>
 
-    @if (results != null && results.Any())
+    @if (ViewBag.Subdomains != null && ((List<OsintEyeWeb.Models.SubdomainUrl>)ViewBag.Subdomains).Any())
     {
         <div class="table-responsive mt-4">
             <table class="table table-striped border-secondary">
-                <thead>
+                <thead class="thead-dark">
                     <tr>
-                        <th scope="col">Profile URL</th>
+                        <th>Subdomain</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var result in results)
+                    @foreach (var subdomain in (List<OsintEyeWeb.Models.SubdomainUrl>)ViewBag.Subdomains)
                     {
                         <tr>
-                            <td>
-                                <a href="@result.ProfileUrl" target="_blank" class="text-decoration-none text-light">@result.ProfileUrl</a>
-                            </td>
+                            <td class="text-light">@subdomain.Subdomain</td>
                         </tr>
                     }
                 </tbody>
@@ -31,7 +29,7 @@
     else
     {
         <div class="alert alert-warning text-center mt-4" role="alert">
-            No results found. Please try a different username.
+            No subdomains found. Please check the domain and try again.
         </div>
     }
 </div>
