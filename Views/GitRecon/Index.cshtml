@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "GitRecon";
+}
+
+<div class="card p-3 shadow-lg bg-dark text-white">
+    <h2 class="text-center p-3">GitRecon</h2>
+
+    <!-- Tabs for searching options -->
+    <nav>
+        <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+            <!-- Tab to find email by username -->
+            <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#findEmail" role="tab" aria-controls="findEmail" aria-selected="true">Find Email by Username</a>
+            <!-- Tab to find username by email -->
+            <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#findUsername" role="tab" aria-controls="findUsername" aria-selected="false">Find Username by Email</a>
+        </div>
+    </nav>
+
+    <div class="tab-content p-3 border bg-dark text-white" id="nav-tabContent">
+
+        <!-- Find Email by Username Tab -->
+        <div class="tab-pane fade active show" id="findEmail" role="tabpanel" aria-labelledby="nav-home-tab">
+            <form asp-action="FindEmailsByUsername" method="post">
+                <div class="mb-3">
+                    <label for="username" class="form-label">Enter GitHub Username</label>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="GitHub username" required />
+                </div>
+                <div class="mb-3">
+                    <label for="token" class="form-label">Personal Access Token (Optional)</label>
+                    <input type="text" id="token" name="token" class="form-control" placeholder="GitHub Personal Access Token" />
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" id="ignoreForks" name="ignoreForks" class="form-check-input" />
+                    <label class="form-check-label text-white" for="ignoreForks">Ignore Forked Repositories</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Find Emails</button>
+            </form>
+        </div>
+
+        <!-- Find Username by Email Tab -->
+        <div class="tab-pane fade" id="findUsername" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <form asp-action="FindUserByEmail" method="post">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Enter Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="example@domain.com" required />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Find Username</button>
+            </form>
+        </div>
+    </div>
+</div>

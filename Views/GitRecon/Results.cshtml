@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "GitRecon Results";
+}
+
+<div class="card p-3 shadow-lg bg-dark text-white">
+    <h3 class="text-center p-3">GitRecon - Search Results</h3>
+
+    <!-- Display Status Message -->
+    @if (!string.IsNullOrEmpty(ViewBag.Message))
+    {
+        <div class="alert alert-info text-center">
+            @ViewBag.Message
+        </div>
+    }
+
+    <!-- Display Username Found from FindUserByEmail -->
+    @if (ViewBag.Result != null)
+    {
+        <h5 class="text-center mt-3">Found Username:</h5>
+        <ul class="list-group">
+            <li class="list-group-item">@ViewBag.Result.Username</li>
+        </ul>
+    }
+
+    <!-- Display Emails Found from FindEmailsByUsername -->
+    @if (ViewBag.Emails != null && ViewBag.Emails.Count() > 0)
+    {
+        <h5 class="text-center mt-3">Found Emails:</h5>
+        <table class="table table-bordered table-striped mt-3">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Email</th>
+                    <th>Author</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var email in (IEnumerable<dynamic>)ViewBag.Emails)
+                {
+                    <tr>
+                        <td>@email.Email</td>
+                        <td>@email.Author</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else if (ViewBag.Emails != null)
+    {
+        <!-- If there are no emails found, show this message -->
+        <div class="alert alert-warning text-center">
+            No emails found or failed to fetch data.
+        </div>
+    }
+
+    <!-- If No Results Were Found, Show a Message -->
+    @* @if (ViewBag.Result == null && (ViewBag.Emails == null || !ViewBag.Emails.Any())) *@
+    @* { *@
+    @*     <div class="alert alert-warning text-center"> *@
+    @*         No data found. Please try again. *@
+    @*     </div> *@
+    @* } *@
+</div>
+
+<!-- Optionally, add a button to allow the user to return to the home page -->
+<div class="text-center mt-4">
+    <a href="@Url.Action("Index", "GitRecon")" class="btn btn-secondary">Back to Search</a>
+</div>

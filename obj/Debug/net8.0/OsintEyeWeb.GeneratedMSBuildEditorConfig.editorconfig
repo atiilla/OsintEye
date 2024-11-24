@@ -24,6 +24,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/projects/OsintEyeWeb/Views/GitRecon/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2l0UmVjb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/projects/OsintEyeWeb/Views/GitRecon/Results.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2l0UmVjb25cUmVzdWx0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/projects/OsintEyeWeb/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

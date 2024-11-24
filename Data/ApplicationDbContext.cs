@@ -9,5 +9,7 @@ namespace OsintEyeWeb.Data
             : base(options)
         {
         }
+
+        public DbSet<OsintEyeWeb.Models.EmailAuthor> EmailAuthors { get; set; } = default!;
     }
 }
