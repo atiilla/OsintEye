@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Search";
+}
+
+<h2>Search</h2>
+
+<form asp-controller="SocialAccountFinder" asp-action="CheckWebsites" method="post">
+    <label for="username">Enter Username:</label>
+    <input type="text" id="username" name="username" />
+    <button type="submit">Search</button>
+</form>

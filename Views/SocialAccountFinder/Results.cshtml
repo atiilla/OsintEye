@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Results";
+    var results = ViewBag.Results as List<OsintEyeWeb.Models.AccountResult>;
+}
+
+<h2>Results</h2>
+
+@if (results != null && results.Any())
+{
+    <ul>
+        @foreach (var result in results)
+        {
+            <li><a href="@result.ProfileUrl">@result.ProfileUrl</a></li>
+        }
+    </ul>
+}
+else
+{
+    <p>No results found.</p>
+}
