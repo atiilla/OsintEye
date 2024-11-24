@@ -1,32 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\projects\\OsintEye\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|d:\\projects\\osinteye\\resources\\strings.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|solutionrelative:resources\\strings.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|d:\\projects\\osinteye\\gitrecon.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|solutionrelative:gitrecon.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|d:\\projects\\osinteye\\resources\\dark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|solutionrelative:resources\\dark.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|d:\\projects\\osinteye\\resources\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|solutionrelative:resources\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|d:\\projects\\osinteye\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|d:\\projects\\osinteye\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1825AA4A-F25A-456B-85C9-62860C7D498D}|GitRecon.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -34,80 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Strings.resx",
-              "DocumentMoniker": "D:\\projects\\OsintEye\\Resources\\Strings.resx",
-              "RelativeDocumentMoniker": "Resources\\Strings.resx",
-              "ToolTip": "D:\\projects\\OsintEye\\Resources\\Strings.resx",
-              "RelativeToolTip": "Resources\\Strings.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-10-22T13:03:40.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GitRecon",
-              "DocumentMoniker": "D:\\projects\\OsintEye\\GitRecon.csproj",
-              "RelativeDocumentMoniker": "GitRecon.csproj",
-              "ToolTip": "D:\\projects\\OsintEye\\GitRecon.csproj",
-              "RelativeToolTip": "GitRecon.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-22T13:02:03.947Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\projects\\OsintEye\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\projects\\OsintEye\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T11:56:35.868Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dark.xaml",
-              "DocumentMoniker": "D:\\projects\\OsintEye\\Resources\\Dark.xaml",
-              "RelativeDocumentMoniker": "Resources\\Dark.xaml",
-              "ToolTip": "D:\\projects\\OsintEye\\Resources\\Dark.xaml",
-              "RelativeToolTip": "Resources\\Dark.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-22T11:52:23.989Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Styles.xaml",
-              "DocumentMoniker": "D:\\projects\\OsintEye\\Resources\\Styles.xaml",
-              "RelativeDocumentMoniker": "Resources\\Styles.xaml",
-              "ToolTip": "D:\\projects\\OsintEye\\Resources\\Styles.xaml",
-              "RelativeToolTip": "Resources\\Styles.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-22T10:43:29.296Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\projects\\OsintEye\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "D:\\projects\\OsintEye\\MainWindow.xaml",
-              "RelativeToolTip": "MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-10-22T12:41:53.914Z"
             }
           ]
         }
