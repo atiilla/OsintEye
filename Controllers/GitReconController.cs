@@ -6,9 +6,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using System.Net.Http.Headers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace OsintEyeWeb.Controllers
 {
+    //[Authorize]
     public class GitReconController : Controller
     {
         private const string API_URL = "https://api.github.com";
@@ -54,7 +56,7 @@ namespace OsintEyeWeb.Controllers
             _logger.LogInformation("Emails fetched for username {Username}: {EmailCount} emails found", username, emails.Count);
 
             // Pass results to ViewBag
-            ViewBag.Results = emails.Select(e => new { Email = e.Email, Author = e.Author }).ToList();
+            ViewBag.Emails = emails.Select(e => new { Email = e.Email, Author = e.Author }).ToList();
 
             return View("Results");
         }

@@ -1,7 +1,7 @@
 ﻿@{
     ViewData["Title"] = "GitRecon Results";
+    var results = ViewBag.Results as List<OsintEyeWeb.Models.EmailAuthor>;
 }
-
 <div class="card p-3 shadow-lg bg-dark text-white">
     <h3 class="text-center p-3">GitRecon - Search Results</h3>
 
@@ -15,15 +15,15 @@
 
     <!-- Display Username Found from FindUserByEmail -->
     @if (ViewBag.Result != null)
-    {
+        {
         <h5 class="text-center mt-3">Found Username:</h5>
         <ul class="list-group">
             <li class="list-group-item">@ViewBag.Result.Username</li>
-        </ul>
-    }
+         </ul> 
+    } 
 
     <!-- Display Emails Found from FindEmailsByUsername -->
-    @if (ViewBag.Emails != null && ViewBag.Emails.Count() > 0)
+    @if (ViewBag.Emails != null && ViewBag.Emails.Count > 0)
     {
         <h5 class="text-center mt-3">Found Emails:</h5>
         <table class="table table-bordered table-striped mt-3">
@@ -37,28 +37,28 @@
                 @foreach (var email in (IEnumerable<dynamic>)ViewBag.Emails)
                 {
                     <tr>
-                        <td>@email.Email</td>
-                        <td>@email.Author</td>
+                        <td class="text-light">@email.Email</td>
+                        <td class="text-light">@email.Author</td>
                     </tr>
                 }
             </tbody>
         </table>
     }
     else if (ViewBag.Emails != null)
-    {
-        <!-- If there are no emails found, show this message -->
-        <div class="alert alert-warning text-center">
-            No emails found or failed to fetch data.
-        </div>
-    }
+     { 
+         @* <!-- If there are no emails found, show this message -->  *@
+         <div class="alert alert-warning text-center"> 
+             No emails found or failed to fetch data. 
+         </div> 
+     } 
 
     <!-- If No Results Were Found, Show a Message -->
-    @* @if (ViewBag.Result == null && (ViewBag.Emails == null || !ViewBag.Emails.Any())) *@
-    @* { *@
-    @*     <div class="alert alert-warning text-center"> *@
-    @*         No data found. Please try again. *@
-    @*     </div> *@
-    @* } *@
+     @if (ViewBag.Result == null && (ViewBag.Emails == null || !ViewBag.Emails.Any())) 
+    { 
+         <div class="alert alert-warning text-center"> 
+             No data found. Please try again. 
+       </div> 
+     } 
 </div>
 
 <!-- Optionally, add a button to allow the user to return to the home page -->
