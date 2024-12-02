@@ -14,6 +14,16 @@
             <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#findUsername" role="tab" aria-controls="findUsername" aria-selected="false">Find Username by Email</a>
         </div>
     </nav>
+    <!--if user role admin is -->
+    @* {
+       
+        @if (_User.IsInRole("Admin"))
+		{
+			<div class="alert alert-warning" role="alert">
+				<strong>Warning!</strong> You are an admin.
+			</div>
+		}
+    } *@
 
     <div class="tab-content p-3 border bg-dark text-white" id="nav-tabContent">
 

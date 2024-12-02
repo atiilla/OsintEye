@@ -6,9 +6,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using System.Net.Http.Headers;
+using Microsoft.AspNetCore.Authorization;
 
 namespace OsintEyeWeb.Controllers
 {
+    [Authorize]
+    // [Authorize (Roles="User,Admin")]
     public class GitReconController : Controller
     {
         private const string API_URL = "https://api.github.com";
