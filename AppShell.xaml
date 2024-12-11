@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:MauiApp1"
+       x:Class="MauiApp1.AppShell">
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style TargetType="TabBar">
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{DynamicResource Black}" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="{DynamicResource ActiveTabColor}" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="{DynamicResource InactiveTabColor}" />
+                <Setter Property="Shell.TabBarTitleColor" Value="DarkGreen"/>
+            </Style>
+
+         
+        </ResourceDictionary>
+    </Shell.Resources>
+
+    <TabBar>
+        <!-- Tab for "Github" -->
+        <Tab Title="Github Osint">
+            <ShellContent ContentTemplate="{DataTemplate local:GithubSearch}" />
+        </Tab>
+
+        <!-- Tab for "Username Finder" -->
+        <Tab Title="UserFinder">
+            <ShellContent ContentTemplate="{DataTemplate local:UsernameFinder}" />
+        </Tab>
+
+        <!-- Tab for Subdomain Enumeration -->
+        <Tab Title="Subdomain Enum">
+            <ShellContent ContentTemplate="{DataTemplate local:SubdomainEnum}"/>
+        </Tab>
+    </TabBar>
+
+</Shell>

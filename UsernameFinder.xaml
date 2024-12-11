@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.UsernameFinder">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label 
+            Text="Username Finder"
+            FontSize="18"
+            SemanticProperties.HeadingLevel="Level2" />
+
+            <Entry 
+            Placeholder="Enter username"
+            x:Name="UsernameEntry"
+            Keyboard="Text" />
+
+            <Button 
+            Text="Find Username"
+            HorizontalOptions="Fill"
+            Clicked="OnUsernameFinderClicked" />
+
+            <!-- Add results section here -->
+            <CollectionView x:Name="UsernameResultsCollectionView" 
+            ItemsSource="{Binding UsernameResults}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame Padding="10" Margin="5">
+                            <VerticalStackLayout>
+                                <Label Text="{Binding Username}" FontSize="16" />
+                                <Label Text="{Binding Details}" FontSize="14" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

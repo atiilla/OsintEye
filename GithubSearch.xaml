@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.GithubSearch">
+    <StackLayout>
+        <ScrollView>
+            <VerticalStackLayout Padding="20" Spacing="15">
+                <Label 
+            Text="GitHub Query"
+            FontSize="18"
+            SemanticProperties.HeadingLevel="Level2" />
+
+                <Entry 
+            Placeholder="Enter GitHub username or email"
+            x:Name="GitHubSearchEntry"
+            Keyboard="Text" />
+
+                <Button 
+            Text="Search"
+            HorizontalOptions="Fill"
+            Clicked="OnGitHubSearchClicked" />
+
+                <CollectionView x:Name="GitHubResultsCollectionView" 
+                        ItemsSource="{Binding GitHubResults}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame Padding="10" Margin="5">
+                                <VerticalStackLayout>
+                                    <Label Text="{Binding Name}" FontSize="16" />
+                                    <Label Text="{Binding Email}" FontSize="14" />
+                                </VerticalStackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>
