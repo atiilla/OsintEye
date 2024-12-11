@@ -1,0 +1,58 @@
+# .NET MAUI
+/bin/
+/obj/
+
+/.idea/
+/.vscode/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET specific
+wwwroot/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows Installer files
+*.pdb
+*.exe
+*.dll
+*.vshost.*
+
+# NUnit
+test-result.xml
+nunit-*.xml
+
+# JetBrains Rider
+.idea/
+
+# Local History for Visual Studio
+.vs/
+
+# macOS and Linux specific
+.DS_Store
+.idea/
+
+# Microsoft Visual Studio for Mac
+.vscode/
+
+# .NET SDK related
+.nuget/
