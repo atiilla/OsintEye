@@ -2,32 +2,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.UsernameFinder">
+
     <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="15">
-            <Label 
-            Text="Username Finder"
-            FontSize="18"
-            SemanticProperties.HeadingLevel="Level2" />
+            <Label Text="Social Account Finder"
+                   FontSize="18"
+                   SemanticProperties.HeadingLevel="Level2" />
 
-            <Entry 
-            Placeholder="Enter username"
-            x:Name="UsernameEntry"
-            Keyboard="Text" />
+            <Entry Placeholder="Enter username"
+                   x:Name="UsernameEntry"
+                   Keyboard="Text" />
 
-            <Button 
-            Text="Find Username"
-            HorizontalOptions="Fill"
-            Clicked="OnUsernameFinderClicked" />
+            <Button Text="Find Accounts"
+                    Clicked="OnCheckWebsitesClicked" />
 
-            <!-- Add results section here -->
-            <CollectionView x:Name="UsernameResultsCollectionView" 
-            ItemsSource="{Binding UsernameResults}">
+            <CollectionView x:Name="ResultsCollectionView">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
                         <Frame Padding="10" Margin="5">
                             <VerticalStackLayout>
-                                <Label Text="{Binding Username}" FontSize="16" />
-                                <Label Text="{Binding Details}" FontSize="14" />
+                                <Label Text="{Binding WebsiteName}" FontSize="16" />
+                                <Label Text="{Binding ProfileUrl}" FontSize="14" />
                             </VerticalStackLayout>
                         </Frame>
                     </DataTemplate>
