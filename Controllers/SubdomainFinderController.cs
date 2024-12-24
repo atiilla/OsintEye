@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using OsintEyeWeb.Models;
+using Osint_Eye_Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Text.Json;
 
-namespace OsintEyeWeb.Controllers
+namespace Osint_Eye_Web.Controllers
 {
     public class SubdomainFinderController : Controller
     {

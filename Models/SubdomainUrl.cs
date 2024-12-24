@@ -1,4 +1,4 @@
-namespace OsintEyeWeb.Models
+namespace Osint_Eye_Web.Models
 {
     public class SubdomainUrl
     {

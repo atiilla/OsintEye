@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace OsintEyeWeb.Data
+namespace Osint_Eye_Web.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
@@ -10,6 +10,6 @@ namespace OsintEyeWeb.Data
         {
         }
 
-        public DbSet<OsintEyeWeb.Models.EmailAuthor> EmailAuthors { get; set; } = default!;
+        public DbSet<Osint_Eye_Web.Models.EmailAuthor> EmailAuthors { get; set; } = default!;
     }
 }

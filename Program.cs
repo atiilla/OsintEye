@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using OsintEyeWeb.Data;
+using Osint_Eye_Web.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
