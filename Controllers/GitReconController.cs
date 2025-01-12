@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Osint_Eye_Web.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "newbie")]
     public class GitReconController : Controller
     {
         private const string API_URL = "https://api.github.com";

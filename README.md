@@ -1,6 +1,15 @@
-In Visual Studio, you can use the Package Manager Console to apply pending migrations to the database:
 
-PM> Update-Database
-Alternatively, you can apply pending migrations from a command prompt at your project directory:
 
-> dotnet ef database update
+## For the first time, you need to create the admin user
+
+> dotnet run --project OsintEyeWeb.csproj -- create-admin
+
+## For the first time, you need to create the newbie role
+
+> dotnet run --project OsintEyeWeb.csproj -- create-role newbie
+
+## For the first time, you need to initialize the database
+```
+Add-Migration InitialCreate
+Update-Database
+```

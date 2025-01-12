@@ -289,10 +289,10 @@ D:\projects\OsintEyeWeb\obj\Debug\net8.0\staticwebassets\msbuild.build.OsintEyeW
 D:\projects\OsintEyeWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.OsintEyeWeb.props
 D:\projects\OsintEyeWeb\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.OsintEyeWeb.props
 D:\projects\OsintEyeWeb\obj\Debug\net8.0\staticwebassets.pack.json
-D:\projects\OsintEyeWeb\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\projects\OsintEyeWeb\obj\Debug\net8.0\OsintEye.831246FB.Up2Date
 D:\projects\OsintEyeWeb\obj\Debug\net8.0\OsintEyeWeb.dll
 D:\projects\OsintEyeWeb\obj\Debug\net8.0\refint\OsintEyeWeb.dll
 D:\projects\OsintEyeWeb\obj\Debug\net8.0\OsintEyeWeb.pdb
 D:\projects\OsintEyeWeb\obj\Debug\net8.0\OsintEyeWeb.genruntimeconfig.cache
 D:\projects\OsintEyeWeb\obj\Debug\net8.0\ref\OsintEyeWeb.dll
+D:\projects\OsintEyeWeb\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
