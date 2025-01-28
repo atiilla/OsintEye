@@ -1,12 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Results";
-    var results = ViewBag.Results as List<Osint_Eye_Web.Models.AccountResult>;
+    var results = ViewBag.Results as List<OsintEyeWeb.Models.AccountResult>;
 }
 
 <div class="container mt-5">
     <h2 class="text-center">Subdomain Results</h2>
 
-    @if (ViewBag.Subdomains != null && ((List<Osint_Eye_Web.Models.SubdomainUrl>)ViewBag.Subdomains).Any())
+    @if (ViewBag.Subdomains != null && ((List<OsintEyeWeb.Models.SubdomainUrl>)ViewBag.Subdomains).Any())
     {
         <div class="table-responsive mt-4">
             <table class="table table-striped border-secondary">
@@ -16,7 +16,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var subdomain in (List<Osint_Eye_Web.Models.SubdomainUrl>)ViewBag.Subdomains)
+                    @foreach (var subdomain in (List<OsintEyeWeb.Models.SubdomainUrl>)ViewBag.Subdomains)
                     {
                         <tr>
                             <td class="text-light">@subdomain.Subdomain</td>

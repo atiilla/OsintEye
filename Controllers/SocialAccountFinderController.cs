@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Osint_Eye_Web.Models;
+using OsintEyeWeb.Models;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Osint_Eye_Web.Controllers
+namespace OsintEyeWeb.Controllers
 {
     public class SocialAccountFinderController : Controller
     {

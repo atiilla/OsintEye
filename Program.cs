@@ -1,8 +1,11 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Osint_Eye_Web.Data;
+using OsintEyeWeb.Data;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Add this line to register HTTP client factory
+builder.Services.AddHttpClient();
 
 // services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
@@ -25,6 +28,12 @@ builder.Services.AddResponseCompression(options =>
 
 // Request Localization
 builder.Services.AddLocalization();
+
+builder.Services.AddHttpClient("SocialMedia", client =>
+{
+    client.DefaultRequestHeaders.Add("User-Agent", "OsintEye/1.0");
+    client.Timeout = TimeSpan.FromSeconds(30);
+});
 
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddRoles<IdentityRole>()
@@ -121,6 +130,21 @@ using (var scope = app.Services.CreateScope())
         {
             await userManager.AddToRoleAsync(admin, "Admin");
         }
+    }
+}
+
+// Add this before app.Run()
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        await ApplicationDbContext.Initialize(services);
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred while seeding the database.");
     }
 }
 

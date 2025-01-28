@@ -10,6 +10,37 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SocialMediaServicesController",
+    "Method": "GetAllServices",
+    "RelativePath": "api/SocialMediaServices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SocialMediaServicesController",
+    "Method": "CheckUsername",
+    "RelativePath": "api/SocialMediaServices/{serviceName}/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "serviceName",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "OsintEyeWeb.Controllers.UserController",
     "Method": "Login",
     "RelativePath": "api/User/login",

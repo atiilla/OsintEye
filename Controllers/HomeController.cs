@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Osint_Eye_Web.Models;
+using OsintEyeWeb.Models;
 
-namespace Osint_Eye_Web.Controllers
+namespace OsintEyeWeb.Controllers
 {
     public class HomeController : Controller
     {

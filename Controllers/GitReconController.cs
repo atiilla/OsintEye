@@ -8,7 +8,7 @@ using Microsoft.Extensions.Logging;
 using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Authorization;
 
-namespace Osint_Eye_Web.Controllers
+namespace OsintEyeWeb.Controllers
 {
     [Authorize(Roles ="admin")]
     public class GitReconController : Controller
