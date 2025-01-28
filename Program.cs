@@ -47,17 +47,34 @@ app.UseEndpoints(endpoints =>
     endpoints.MapControllers();
 });
 
-// Initialize Roles
+ // init roles
 using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-    var roles = new[] { "admin", "newbie" };
+    var userManager = scope.ServiceProvider.GetRequiredService<UserManager<IdentityUser>>();
 
-    foreach (var role in roles)
+    // Make sure admin role exists
+    if (!await roleManager.RoleExistsAsync("Admin"))
     {
-        if (!await roleManager.RoleExistsAsync(role))
+        await roleManager.CreateAsync(new IdentityRole("Admin"));
+    }
+
+    var adminEmail = "admin@osinteye.com"; // admin email
+    var adminUser = await userManager.FindByEmailAsync(adminEmail);
+
+    if (adminUser == null)
+    {
+        var admin = new IdentityUser
         {
-            await roleManager.CreateAsync(new IdentityRole(role));
+            UserName = adminEmail,
+            Email = adminEmail,
+            EmailConfirmed = true
+        };
+
+        var result = await userManager.CreateAsync(admin, "Admin123!");  // Change this password
+        if (result.Succeeded)
+        {
+            await userManager.AddToRoleAsync(admin, "Admin");
         }
     }
 }

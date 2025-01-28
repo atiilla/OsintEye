@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Osint_Eye_Web.Data
@@ -11,5 +12,10 @@ namespace Osint_Eye_Web.Data
         }
 
         public DbSet<Osint_Eye_Web.Models.EmailAuthor> EmailAuthors { get; set; } = default!;
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+        }
     }
 }

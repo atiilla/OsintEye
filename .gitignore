@@ -1,3 +1,131 @@
 .vs
 bin
 obj
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio files
+.vscode/
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.[Cc]ache
+*.bak
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.tlog
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+# Local development settings
+appsettings.Development.json
+appsettings.Local.json
+
+# Temporary files
+*.swp
+*.*~
+
+
+
+# ASP.NET Core
+bin/
+obj/
+*.dll
+*.exe
+.vs/
+*.user
+*.userosscache
+*.suo
+*.cache
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+orleans.codegen.cs
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Visual Studio for Mac
+.vscode/
+.idea/
+*.userprefs
+mono_crash.*
+
+# ASP.NET Core Web API
+wwwroot/
+Properties/PublishProfiles/
+Properties/ServiceDependencies/
+Migrations/

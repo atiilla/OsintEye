@@ -8364,11 +8364,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\OsintEyeWeb\\OsintEyeWeb.csproj",
+      "projectUniqueName": "C:\\Users\\r00t\\Desktop\\OSINTEye\\OsintEyeWeb\\OsintEyeWeb.csproj",
       "projectName": "OsintEyeWeb",
-      "projectPath": "D:\\projects\\OsintEyeWeb\\OsintEyeWeb.csproj",
+      "projectPath": "C:\\Users\\r00t\\Desktop\\OSINTEye\\OsintEyeWeb\\OsintEyeWeb.csproj",
       "packagesPath": "C:\\Users\\r00t\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\OsintEyeWeb\\obj\\",
+      "outputPath": "C:\\Users\\r00t\\Desktop\\OSINTEye\\OsintEyeWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8400,7 +8400,7 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
+        "auditMode": "direct"
       },
       "SdkAnalysisLevel": "9.0.100"
     },
@@ -8456,20 +8456,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Text.Json' 7.0.3 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
-      "libraryId": "System.Text.Json",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }
