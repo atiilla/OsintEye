@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\r00t\\Desktop\\OSINTEye\\OsintEyeWeb\\OsintEyeWeb.csproj": {}
+    "D:\\projects\\OsintEyeWeb\\OsintEyeWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\r00t\\Desktop\\OSINTEye\\OsintEyeWeb\\OsintEyeWeb.csproj": {
+    "D:\\projects\\OsintEyeWeb\\OsintEyeWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\r00t\\Desktop\\OSINTEye\\OsintEyeWeb\\OsintEyeWeb.csproj",
+        "projectUniqueName": "D:\\projects\\OsintEyeWeb\\OsintEyeWeb.csproj",
         "projectName": "OsintEyeWeb",
-        "projectPath": "C:\\Users\\r00t\\Desktop\\OSINTEye\\OsintEyeWeb\\OsintEyeWeb.csproj",
+        "projectPath": "D:\\projects\\OsintEyeWeb\\OsintEyeWeb.csproj",
         "packagesPath": "C:\\Users\\r00t\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\r00t\\Desktop\\OSINTEye\\OsintEyeWeb\\obj\\",
+        "outputPath": "D:\\projects\\OsintEyeWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -78,6 +78,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[7.2.0, )"
             }
           },
           "imports": [

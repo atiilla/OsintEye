@@ -594,3 +594,7 @@ C:\Users\r00t\Desktop\OSINTEye\OsintEyeWeb\obj\Debug\net8.0\refint\OsintEyeWeb.d
 C:\Users\r00t\Desktop\OSINTEye\OsintEyeWeb\obj\Debug\net8.0\OsintEyeWeb.pdb
 C:\Users\r00t\Desktop\OSINTEye\OsintEyeWeb\obj\Debug\net8.0\OsintEyeWeb.genruntimeconfig.cache
 C:\Users\r00t\Desktop\OSINTEye\OsintEyeWeb\obj\Debug\net8.0\ref\OsintEyeWeb.dll
+D:\projects\OsintEyeWeb\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\projects\OsintEyeWeb\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\projects\OsintEyeWeb\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\projects\OsintEyeWeb\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll

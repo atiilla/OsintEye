@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OsintEyeWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cccfffe6680dc8f496a5240bb89c2cab0cc65f74")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0019c572dd29e61deea46baf05c24e54131cbb66")]
 [assembly: System.Reflection.AssemblyProductAttribute("OsintEyeWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OsintEyeWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
