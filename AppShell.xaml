@@ -2,6 +2,8 @@
 <Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:MauiApp1"
+       xmlns:views="clr-namespace:MauiApp1.Views"
+       Shell.FlyoutBehavior="Disabled"
        x:Class="MauiApp1.AppShell">
 
     <Shell.Resources>
@@ -17,7 +19,12 @@
         </ResourceDictionary>
     </Shell.Resources>
 
-    <TabBar>
+    <ShellContent
+        Route="LoginPage"
+        ContentTemplate="{DataTemplate views:LoginPage}"
+        FlyoutItemIsVisible="False"/>
+
+    <TabBar Route="MainPage" FlyoutItemIsVisible="False">
         <!-- Tab for "Github" -->
         <Tab Title="Github Osint">
             <ShellContent ContentTemplate="{DataTemplate local:GithubSearch}" />

@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
+using MauiApp1.Services;
+using MauiApp1.Views;
+using MauiApp1.ViewModels;
 
 namespace MauiApp1
 {
@@ -14,6 +17,15 @@ namespace MauiApp1
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+
+            // Register services
+            builder.Services.AddSingleton<MockAuthService>();
+            
+            // Register pages and viewmodels
+            builder.Services.AddTransient<LoginPage>();
+            builder.Services.AddTransient<LoginViewModel>();
+            builder.Services.AddTransient<RegisterPage>();
+            builder.Services.AddTransient<RegisterViewModel>();
 
 #if DEBUG
     		builder.Logging.AddDebug();

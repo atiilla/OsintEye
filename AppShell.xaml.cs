@@ -1,4 +1,5 @@
 ﻿using Microsoft.Maui.Controls;
+using MauiApp1.Views;
 
 namespace MauiApp1
 {
@@ -7,6 +8,7 @@ namespace MauiApp1
         public AppShell()
         {
             InitializeComponent();
+            Routing.RegisterRoute("RegisterPage", typeof(RegisterPage));
         }
     }
 }
