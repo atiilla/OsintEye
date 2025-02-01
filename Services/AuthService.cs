@@ -77,5 +77,57 @@ namespace MauiApp1.Services
                 return false;
             }
         }
+
+        public async Task<bool> Register(User user)
+        {
+            try
+            {
+                var registerRequest = new Register
+                {
+                    Email = user.Email,
+                    Password = user.Password,
+                    ConfirmPassword = user.Password
+                };
+
+                System.Diagnostics.Debug.WriteLine($"Attempting to connect to: {BaseUrl}/User/register");
+                System.Diagnostics.Debug.WriteLine($"Request payload: {JsonSerializer.Serialize(registerRequest)}");
+
+                using var request = new HttpRequestMessage(HttpMethod.Post, $"{BaseUrl}/User/register");
+                request.Content = JsonContent.Create(registerRequest);
+                
+                request.Headers.Add("Accept", "application/json");
+                
+                var response = await _httpClient.SendAsync(request);
+                var content = await response.Content.ReadAsStringAsync();
+
+                System.Diagnostics.Debug.WriteLine($"Response status code: {response.StatusCode}");
+                System.Diagnostics.Debug.WriteLine($"Response content: {content}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    return true;
+                }
+                
+                System.Diagnostics.Debug.WriteLine($"Request failed with status: {response.StatusCode}");
+                return false;
+            }
+            catch (HttpRequestException ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"HTTP Request error: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Inner exception: {ex.InnerException?.Message}");
+                return false;
+            }
+            catch (TaskCanceledException ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Request timed out: {ex.Message}");
+                return false;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Unexpected error: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Stack trace: {ex.StackTrace}");
+                return false;
+            }
+        }
     }
-} 
+}

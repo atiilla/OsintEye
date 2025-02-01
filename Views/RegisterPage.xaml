@@ -3,9 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Views.RegisterPage">
     <VerticalStackLayout Spacing="20" Padding="20" VerticalOptions="Center">
-        <Entry x:Name="UsernameEntry" 
-               Placeholder="Username"
-               Text="{Binding Username}"/>
+       
         <Entry x:Name="EmailEntry" 
                Placeholder="Email"
                Text="{Binding Email}"/>
@@ -13,7 +11,12 @@
                Placeholder="Password" 
                IsPassword="True"
                Text="{Binding Password}"/>
+       <Entry x:Name="ConfirmPasswordEntry" 
+               Placeholder="Confirm Password" 
+               IsPassword="True"
+               Text="{Binding ConfirmPassword}"/>
         <Button Text="Register" 
                 Command="{Binding RegisterCommand}"/>
     </VerticalStackLayout>
+
 </ContentPage> 

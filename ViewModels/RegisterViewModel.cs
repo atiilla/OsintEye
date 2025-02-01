@@ -10,10 +10,11 @@ namespace MauiApp1.ViewModels
 {
     public class RegisterViewModel : INotifyPropertyChanged
     {
-        private readonly MockAuthService _authService;
+        private readonly AuthService _authService;
         private string _username;
         private string _password;
         private string _email;
+
 
         public string Username
         {
@@ -47,11 +48,12 @@ namespace MauiApp1.ViewModels
 
         public Command RegisterCommand { get; }
 
-        public RegisterViewModel(MockAuthService authService)
+        public RegisterViewModel(AuthService authService)
         {
             _authService = authService;
             RegisterCommand = new Command(OnRegisterClicked);
         }
+
 
         private async void OnRegisterClicked()
         {
@@ -62,11 +64,12 @@ namespace MauiApp1.ViewModels
                 Email = Email
             };
 
-            if (_authService.Register(user))
+            if (await _authService.Register(user))
             {
                 await Shell.Current.DisplayAlert("Success", "Registration successful!", "OK");
                 await Shell.Current.GoToAsync("///MainPage");
             }
+
             else
             {
                 await Shell.Current.DisplayAlert("Error", "Username or email already exists", "OK");
