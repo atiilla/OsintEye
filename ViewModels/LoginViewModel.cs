@@ -9,16 +9,17 @@ namespace MauiApp1.ViewModels
 {
     public class LoginViewModel : INotifyPropertyChanged
     {
-        private readonly MockAuthService _authService;
-        private string _username;
+        private readonly AuthService _authService;
+        private string _email;
         private string _password;
+        private bool _isBusy;
 
-        public string Username
+        public string Email
         {
-            get => _username;
+            get => _email;
             set
             {
-                _username = value;
+                _email = value;
                 OnPropertyChanged();
             }
         }
@@ -33,25 +34,60 @@ namespace MauiApp1.ViewModels
             }
         }
 
+        public bool IsBusy
+        {
+            get => _isBusy;
+            set
+            {
+                _isBusy = value;
+                OnPropertyChanged();
+                LoginCommand.ChangeCanExecute();
+            }
+        }
+
         public Command LoginCommand { get; }
         public Command GoToRegisterCommand { get; }
 
-        public LoginViewModel(MockAuthService authService)
+        public LoginViewModel(AuthService authService)
         {
             _authService = authService;
-            LoginCommand = new Command(OnLoginClicked);
+            LoginCommand = new Command(async () => await OnLoginClicked(), () => !IsBusy);
             GoToRegisterCommand = new Command(OnRegisterClicked);
         }
 
-        private async void OnLoginClicked()
+        private async Task OnLoginClicked()
         {
-            if (_authService.Login(Username, Password))
+            if (IsBusy) return;
+
+            try
             {
-                await Shell.Current.GoToAsync("///MainPage");
+                IsBusy = true;
+
+                if (string.IsNullOrWhiteSpace(Email) || string.IsNullOrWhiteSpace(Password))
+                {
+                    await Shell.Current.DisplayAlert("Error", "Please enter email and password", "OK");
+                    return;
+                }
+
+                var result = await _authService.Login(Email, Password);
+
+                if (result)
+                {
+                    await Shell.Current.GoToAsync("///MainPage");
+                }
+                else
+                {
+                    await Shell.Current.DisplayAlert("Error", "Invalid email or password", "OK");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                await Shell.Current.DisplayAlert("Error", "Invalid username or password", "OK");
+                await Shell.Current.DisplayAlert("Error", "An error occurred while logging in", "OK");
+                System.Diagnostics.Debug.WriteLine($"Login error: {ex.Message}");
+            }
+            finally
+            {
+                IsBusy = false;
             }
         }
 

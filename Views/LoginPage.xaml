@@ -3,15 +3,27 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.Views.LoginPage">
     <VerticalStackLayout Spacing="20" Padding="20" VerticalOptions="Center">
-        <Entry x:Name="UsernameEntry" 
-               Placeholder="Username"
-               Text="{Binding Username}"/>
+        <Entry x:Name="EmailEntry" 
+               Placeholder="Email"
+               Text="{Binding Email}"
+               Keyboard="Email"/>
         <Entry x:Name="PasswordEntry" 
                Placeholder="Password" 
                IsPassword="True"
                Text="{Binding Password}"/>
         <Button Text="Login" 
-                Command="{Binding LoginCommand}"/>
+                Command="{Binding LoginCommand}">
+            <Button.Triggers>
+                <DataTrigger TargetType="Button"
+                            Binding="{Binding IsBusy}"
+                            Value="True">
+                    <Setter Property="IsEnabled" Value="False"/>
+                </DataTrigger>
+            </Button.Triggers>
+        </Button>
+        <ActivityIndicator IsRunning="{Binding IsBusy}"
+                          IsVisible="{Binding IsBusy}"
+                          HorizontalOptions="Center"/>
         <Button Text="Register" 
                 Command="{Binding GoToRegisterCommand}"/>
     </VerticalStackLayout>

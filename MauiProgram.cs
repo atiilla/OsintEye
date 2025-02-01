@@ -19,7 +19,7 @@ namespace MauiApp1
                 });
 
             // Register services
-            builder.Services.AddSingleton<MockAuthService>();
+            builder.Services.AddSingleton<AuthService>();
             
             // Register pages and viewmodels
             builder.Services.AddTransient<LoginPage>();
