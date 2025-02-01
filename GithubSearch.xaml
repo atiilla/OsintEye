@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.GithubSearch">
+             
     <StackLayout>
+    
         <ScrollView>
             <VerticalStackLayout Padding="20" Spacing="15">
                 <Label 
@@ -20,6 +22,10 @@
             HorizontalOptions="Fill"
             Clicked="OnGitHubSearchClicked" />
 
+            <Button Text="Logout"  HorizontalOptions="Fill"
+            Clicked="OnLogOutClicked"        
+            />
+
                 <CollectionView x:Name="GitHubResultsCollectionView" 
                         ItemsSource="{Binding GitHubResults}">
                     <CollectionView.ItemTemplate>
@@ -34,6 +40,9 @@
                     </CollectionView.ItemTemplate>
                 </CollectionView>
             </VerticalStackLayout>
+           
         </ScrollView>
+       
     </StackLayout>
+    
 </ContentPage>

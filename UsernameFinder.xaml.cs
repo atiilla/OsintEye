@@ -100,6 +100,8 @@ namespace MauiApp1
             }
         }
 
+       
+
         private async Task<AccountResult> CheckWebsiteAsync(string username, string websiteName, WebsiteInfo websiteInfo, HttpClient httpClient)
         {
             try
@@ -117,6 +119,12 @@ namespace MauiApp1
                 Console.WriteLine($"Error checking {websiteName}: {ex.Message}");
             }
             return null;
+        }
+
+        private async void OnLogOutClicked(object sender, EventArgs e)
+        {
+            Preferences.Clear();
+            await Shell.Current.GoToAsync("//LoginPage");
         }
     }
 

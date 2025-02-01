@@ -59,6 +59,12 @@ namespace MauiApp1
                 }
             }
         }
+
+        private async void OnLogOutClicked(object sender, EventArgs e)
+        {
+            Preferences.Clear();
+            await Shell.Current.GoToAsync("//LoginPage");
+        }
     }
 
     public class GitHubService
@@ -153,4 +159,6 @@ namespace MauiApp1
         public string Name { get; set; }
         public string Email { get; set; }
     }
+
+   
 }

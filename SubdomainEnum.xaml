@@ -20,6 +20,10 @@
     HorizontalOptions="Fill"
     Clicked="OnDomainEnumerationClicked" />
 
+        <Button Text="Logout"  HorizontalOptions="Fill"
+            Clicked="OnLogOutClicked"        
+            />
+
             <!-- Add results section here -->
             <CollectionView x:Name="DomainResultsCollectionView" 
                 ItemsSource="{Binding DomainResults}">

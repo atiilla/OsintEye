@@ -58,6 +58,12 @@ public partial class SubdomainEnum : ContentPage
             await DisplayAlert("Error", "An error occurred while fetching subdomains", "OK");
         }
     }
+
+    private async void OnLogOutClicked(object sender, EventArgs e)
+    {
+        Preferences.Clear();
+        await Shell.Current.GoToAsync("//LoginPage");
+    }
 }
 
 public class SubdomainResult
